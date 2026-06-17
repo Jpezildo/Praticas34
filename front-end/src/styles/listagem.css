@@ -1,0 +1,133 @@
+.listagem-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.listagem-header .page-title {
+  margin-bottom: 0;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 30px;
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+  background: var(--white);
+  color: var(--brown);
+  margin-bottom: 32px;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--green-dark);
+}
+
+.notes-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  color: var(--brown-light);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.api-badge {
+  font-size: 0.75rem;
+  background: var(--yellow);
+  color: var(--brown);
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-weight: normal;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.note-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-left: 4px solid var(--green-dark);
+}
+
+.note-card.api {
+  border-left-color: var(--yellow-dark);
+}
+
+.note-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-badge {
+  font-size: 0.75rem;
+  background: var(--green-dark);
+  color: var(--white);
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+.note-badge.api-tag {
+  background: var(--yellow-dark);
+  color: var(--brown);
+}
+
+.note-date {
+  font-size: 0.78rem;
+  color: var(--brown-light);
+}
+
+.note-card h4 {
+  font-size: 1rem;
+  color: var(--brown);
+  text-transform: capitalize;
+}
+
+.note-card p {
+  font-size: 0.88rem;
+  color: var(--brown-light);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.empty-msg {
+  color: var(--brown-light);
+  font-size: 0.95rem;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.loading-msg {
+  color: var(--brown-light);
+  font-style: italic;
+}
+
+.error-msg-api {
+  color: var(--red);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .notes-grid { grid-template-columns: 1fr; }
+}
