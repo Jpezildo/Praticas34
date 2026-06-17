@@ -1,0 +1,151 @@
+.layout-dashboard {
+  min-height: 100vh;
+  background-color: #16171b;
+}
+
+.conteudo-principal {
+  padding: 32px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.barra-pesquisa {
+  display: flex;
+  align-items: center;
+  background-color: #A2A195;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+}
+
+.barra-pesquisa input {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  margin-left: 8px;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+}
+
+.barra-pesquisa input::placeholder {
+  color: #EAE8E3;
+}
+
+.icone-lupa {
+  color: #ffffff;
+}
+
+.area-adicionar-nota {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-simples {
+  width: 100%;
+  max-width: 480px;
+  padding: 12px;
+  background-color: #E2E2E2;
+  border: 1px solid #B0B0B0;
+  border-radius: 4px;
+  color: #555555;
+  font-size: 0.95rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.input-simples::placeholder {
+  color: #888888;
+}
+
+.formulario-nota-expandido {
+  width: 100%;
+  max-width: 480px;
+  background-color: #E1DFD6;
+  border: 1px solid #A2A195;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.input-titulo-expandido {
+  background-color: #A2A195;
+  border: none;
+  padding: 12px 16px;
+  color: #ffffff;
+  font-size: 1.05rem;
+  outline: none;
+}
+
+.input-titulo-expandido::placeholder {
+  color: #EAE8E3;
+}
+
+.textarea-conteudo-expandido {
+  background: transparent;
+  border: none;
+  padding: 16px;
+  color: #5A5A5A;
+  font-size: 0.95rem;
+  resize: none;
+  outline: none;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+.textarea-conteudo-expandido::placeholder {
+  color: #999999;
+}
+
+.rodape-formulario-expandido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  border-top: 1px solid #CCCCCC;
+}
+
+.icones-formulario {
+  display: flex;
+  gap: 12px;
+  font-size: 1.1rem;
+  color: #7A7A7A;
+  cursor: pointer;
+}
+
+.botoes-formulario {
+  display: flex;
+  gap: 8px;
+}
+
+.botao-salvar-nota, .botao-fechar-nota {
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.botao-salvar-nota {
+  background-color: #A2A195;
+  color: #ffffff;
+}
+
+.botao-fechar-nota {
+  background-color: transparent;
+  color: #5A5A5A;
+  border-color: #B0B0B0;
+}
+
+.grid-notas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
