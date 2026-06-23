@@ -1,0 +1,95 @@
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #f2cd57;
+  --yellow-dark: #d4a832;
+  --green-dark: #3d4a3e;
+  --green-darker: #2e382f;
+  --brown: #2c1a00;
+  --brown-light: #5a4a30;
+  --bg: #f0ece8;
+  --white: #ffffff;
+  --red: #e74c3c;
+  --red-dark: #c0392b;
+  --success: #27ae60;
+  --border: #ddd;
+  --radius: 10px;
+  --shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: var(--bg);
+  color: var(--brown);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:active { transform: scale(0.97); }
+
+.btn-primary {
+  background-color: var(--green-dark);
+  color: var(--white);
+}
+.btn-primary:hover { background-color: var(--green-darker); }
+
+.btn-secondary {
+  background-color: var(--yellow);
+  color: var(--brown);
+}
+.btn-secondary:hover { background-color: var(--yellow-dark); }
+
+.btn-danger {
+  background-color: var(--red);
+  color: var(--white);
+}
+.btn-danger:hover { background-color: var(--red-dark); }
+
+.btn-full { width: 100%; text-align: center; }
+
+.btn-sm {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+}
+
+/* ── Page title ── */
+.page-title {
+  font-size: 1.8rem;
+  color: var(--brown);
+  margin-bottom: 24px;
+}
+
+/* ── Link ── */
+.link {
+  color: var(--green-dark);
+  text-decoration: underline;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .container { padding: 20px 16px; }
+  .page-title { font-size: 1.4rem; }
+}
